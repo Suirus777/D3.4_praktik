@@ -38,5 +38,16 @@ http {
 <b> Ресультат: </b><br>
 <img src="https://github.com/Suirus777/D3.4_praktik/blob/main/screens/kubctl%20get%20all.JPG">
 <img src="https://github.com/Suirus777/D3.4_praktik/blob/main/screens/kubctl%20get%20secrets.JPG">
-Настройки для секретов хранятся в: https://github.com/Suirus777/D3.4_praktik/blob/main/secret.yaml <br> 
-4) Обновить конфиг nginx таким образом, чтобы подключенные секреты использовались для авторизации для доступа к странице по умолчанию в nginx.
+Настройки для секретов хранятся в: https://github.com/Suirus777/D3.4_praktik/blob/main/secret.yaml <br> <br> 
+4) Обновить конфиг nginx таким образом, чтобы подключенные секреты использовались для авторизации для доступа к странице по умолчанию в nginx. <br>  
+<b> Ресультат: </b><br>
+Был создан новый Volume: <br>
+<code>         volumeMounts:
+        - name: auth-basic
+          mountPath: "/etc/nginx/conf.d/.htpasswd"
+          readOnly: true </code> <br>
+И <br>
+<code>      - name: auth-basic
+              secret:
+              secretName: auth-basic  </code> <br>
+Полный настройки можно посмотреть в: https://github.com/Suirus777/D3.4_praktik/blob/main/nginx.yaml <br>
