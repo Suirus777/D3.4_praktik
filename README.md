@@ -6,12 +6,12 @@ Minikube, kubectl, auth-basic, secret, configmap, Deployment <br>
 - имя — nginx-sf; <br>
 - количество реплик — 3. <br>
 <b> Ресультат: </b><br>
-
-Создать конфигурационный файл для нашего приложения и поместить его в наш Pod со следующими свойствами:
-путь до файла в Pod’е — /etc/nginx/nginx.conf;
-содержимое файла:
-user nginx;
-worker_processes  1;
+<img src="https://github.com/Suirus777/D3.4_praktik/blob/main/screens/kubctl%20get%20all.JPG"> <br><br>
+2) Создать конфигурационный файл для нашего приложения и поместить его в наш Pod со следующими свойствами: <br>
+- путь до файла в Pod’е — /etc/nginx/nginx.conf; <br>
+- содержимое файла: <br><br>
+<code> user nginx;
+- worker_processes  1;
 events {
   worker_connections  10240;
 }
@@ -24,7 +24,7 @@ http {
         index  index.html index.htm;
     }
   }
-}
+} </code> <br><br>
 Создать service для того, чтобы можно было обращаться к любому из Pod’ов по единому имени:
 имя сервиса sf-webserver;
 внешний порт — 80.
