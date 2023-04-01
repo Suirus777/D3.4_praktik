@@ -37,5 +37,6 @@ http {
 - Подключить в наш контейнер эти секреты.<br>
 <b> Ресультат: </b><br>
 <img src="https://github.com/Suirus777/D3.4_praktik/blob/main/screens/kubctl%20get%20all.JPG">
-<img src="https://github.com/Suirus777/D3.4_praktik/blob/main/screens/kubctl%20get%20all.JPG">
+<img src="https://github.com/Suirus777/D3.4_praktik/blob/main/screens/kubctl%20get%20secrets.JPG">
+Настройки для секретов хранятся в: https://github.com/Suirus777/D3.4_praktik/blob/main/secret.yaml <br> 
 4) Обновить конфиг nginx таким образом, чтобы подключенные секреты использовались для авторизации для доступа к странице по умолчанию в nginx.
