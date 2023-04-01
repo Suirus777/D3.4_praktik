@@ -6,7 +6,7 @@ Minikube, kubectl, auth-basic, secret, configmap, Deployment <br>
 - имя — nginx-sf; <br>
 - количество реплик — 3. <br>
 <b> Ресультат: </b><br>
-<img src="https://github.com/Suirus777/D3.4_praktik/blob/main/screens/kubctl%20get%20all.JPG"> <br><br>
+<img src="https://github.com/Suirus777/D3.4_praktik/blob/main/screens/kubctl%20get%20all.JPG"> 
 2) Создать конфигурационный файл для нашего приложения и поместить его в наш Pod со следующими свойствами: <br>
 - путь до файла в Pod’е — /etc/nginx/nginx.conf; <br>
 - содержимое файла: <br><br>
